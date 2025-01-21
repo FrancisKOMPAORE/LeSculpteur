@@ -14,21 +14,21 @@
             <i class="ri-menu-line" id="menu-icon"></i>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a> <i class="ri-arrow-right-s-line arrow-icon"></i></li>
-                    <li><a href="#">About us</a> <i class="ri-arrow-right-s-line arrow-icon"></i></li>
-                    <li><a href="#">Services</a> <i class="ri-arrow-right-s-line arrow-icon"></i></li>
-                    <li><a href="#">Contact</a> <i class="ri-arrow-right-s-line arrow-icon"></i></li>
+                    <li><a href="#move-to-hero-section">Home</a> <i class="ri-arrow-right-s-line arrow-icon"></i></li>
+                    <li><a href="#move-to-about-us-section">About us</a> <i class="ri-arrow-right-s-line arrow-icon"></i></li>
+                    <li><a href="#move-to-service-section">Services</a> <i class="ri-arrow-right-s-line arrow-icon"></i></li>
+                    <li><a href="#move-to-contact-section">Contact</a> <i class="ri-arrow-right-s-line arrow-icon"></i></li>
                 </ul>
             </nav>
         </header>
     
-        <section class="hero-section">
+        <section class="hero-section" id="move-to-hero-section">
             <h1>Artisan Sculpteur</h1>
             <h3>Rapprochez-vous de la perfection.</h3>
             <button>Nous contacter</button>
         </section>
 
-        <section class="about-us-section">
+        <section class="about-us-section" id="move-to-about-us-section">
             <h1 class="about-us-section-title">About us</h1>
             <div class="about-us-section-content">
                 <img src="/images/about-us.avif" alt="about-us" class="about-us-section-image">
@@ -36,7 +36,7 @@
             </div>
         </section>
 
-        <section class="services-section">
+        <section class="services-section" id="move-to-service-section">
             <div class="services-section-title-container">
                 <h1 class="services-section-title">Our Services</h1>
                 <p class="services-section-title-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
@@ -90,7 +90,7 @@
             <button type="button" class="service-devis">Demander un devis</button>
         </section>
 
-        <section class="contact-us-section">
+        <section class="contact-us-section" id="move-to-contact-section">
             <h1 class="contact-us-section-title">Contact us</h1>
             <div class="contact-us-section-content">
                 <div class="contact-us-section-coordonnees">
@@ -129,7 +129,7 @@
                         <div class="checkbox">
                             <input type="checkbox" name="radio" id="radio"> 
                             <label for="radio">J’accepte que mes informations soient utilisées pour de la prospection commerciale.</label>
-                            <a href="http://">(Consulter notre politique de confidentialité)</a>
+                            <a href="#" id="consult-confidentiality-policy">(Consulter notre politique de confidentialité)</a>
                         </div>
 
                         <button type="button" class="form-submit">Envoyer</button>
@@ -173,7 +173,7 @@
 
     <div class="consentement-cookies">
         <h1 class="logo">LeSculpteur</h1>
-        <p class="consentement-information">Nous utilisons des cookies pour personanaliser le contenu et les publicités, fournir des fonctionnalité de médias sociaux et analyser le trafic. Nous pouvons partager des informations sur votre utilisation de notre site avec nos paetenaires qui peuvent les combiner avec d'autres données que vous avez fournies ou qu'ils ont collectés lors de votre utilisation de leurs services. <br> <br>
+        <p class="consentement-information">Nous utilisons des cookies pour personnaliser le contenu et les publicités, fournir des fonctionnalités de médias sociaux et analyser le trafic. Nous pouvons partager des informations sur votre utilisation de notre site avec nos partenaires qui peuvent les combiner avec d'autres données que vous avez fournies ou qu'ils ont collectés lors de votre utilisation de leurs services. <br> <br>
         En cliquant sur le boutton ci dessous, vous acceptez les conditions d'utilisations et notre politique de confidentialité.
         </p>
         <button type="button" id="consentement-button">Accepter et autoriser tous les cookies</button>
@@ -182,10 +182,10 @@
 
     <div class="politique-de-confidentialite">
         <h1>Politique de confidentialité</h1>
-        <p>Les données collectées seront communiquées au seul destinataire suivant: le directeur commerciale de la structure. <br>
+        <i class="ri-close-line" id="close-confidentiality-policy-icon"></i>
+        <p>Les données collectées seront communiquées au seul destinataire suivant: le directeur commerciale de la structure. <br> <br>
         Les données sont conservés pendant 06 mois. <br> Vous pouvez accéder aux données vous concernant, les rectifier, demander leur effacement ou exercer votre droit à la limitation de vos données: <br>Vous pourrez retirer à tout moment votre consentement au traitement de vos données. <br> Vous pourvez également vous opposer au traitement de vos données. <br> Vous pouvez également exercer votre droit à la portabilité de vos données.</p>
     </div>
-
     <script src="/js/main.js"></script>
 </body>
 </html>

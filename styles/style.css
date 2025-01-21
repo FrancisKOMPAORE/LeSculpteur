@@ -78,14 +78,15 @@ body.show-mobile-menu header{
 
 body.show-mobile-menu .container::before{
     content: '';
-    position: fixed;
-    left: 0;
-    top: 0;
     width: 100%;
     height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
     backdrop-filter: blur(5px);
     z-index: 9;
     background-color: rgba(0,0,0,0.2);
+    z-index: 15;
 }
 
 .hero-section{
@@ -140,7 +141,7 @@ body.show-mobile-menu .container::before{
 /*about-us-section*/
 .about-us-section{
     width: 100%;
-    padding: 40px 10px;
+    padding: 60px 10px;
     background-color: rgba(255, 255, 255, 0.2);
     display: flex;
     flex-direction: column;
@@ -179,9 +180,9 @@ body.show-mobile-menu .container::before{
 
 .about-us-section-text{
     margin-top: 20px;
-    text-align: start;
+    text-align: justify;
     line-height: 2rem;
-    padding: 0px 10%;
+    padding: 0px 5%;
     font-family: "Ysabeau Infant", serif;
 }
 
@@ -213,7 +214,7 @@ body.show-mobile-menu .container::before{
 
 .services-section-title-container{
     background-color: rgba(41,146,215);
-    padding: 20px 10px;
+    padding: 50px 10px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -253,6 +254,7 @@ body.show-mobile-menu .container::before{
     border-radius: 10px;
     transform: rotate(45deg);
     margin: 40px 40px;
+    cursor: pointer;
 }
 
 .services-section-content-service-item:hover{
@@ -298,7 +300,7 @@ body.show-mobile-menu .container::before{
     color: white;
     padding: 10px 20px;
     border-radius: 10px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: 'cambria', serif;
     font-weight: 800;
     margin-bottom: 50px;
@@ -317,7 +319,7 @@ body.show-mobile-menu .container::before{
 .contact-us-section{
     background-color: rgba(187, 111, 173,0.1);
     background-size: cover;
-    padding: 30px 10px;
+    padding: 70px 10px;
     color: whitesmoke;
     width: 100%;
     border-radius: 10px;
@@ -325,8 +327,8 @@ body.show-mobile-menu .container::before{
 
 .contact-us-section-title{
     text-align: center;
-    padding-bottom: 10px;
-    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-top: 10px;
     color: black;
     font-size: 2rem;
     font-weight: 800;
@@ -350,23 +352,27 @@ body.show-mobile-menu .container::before{
 }
 
 .contact-us-section-coordonnees{
-    padding-top: 20px;
-    width: min(95%, 700px);
+    padding: 20px 0px;
+    width: min(90%, 600px);
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    opacity: 0.7;
+    align-items: center;
+    opacity: 0.9;
     border-radius: 10px;
+    background-color: rgba(182, 175, 181, 0.5);
+    opacity: 0.9;
 }
 
 .contact-us-section-coordonnees-title{
-    width: min(90%, 600px);
+    width: 100%;
     color: rgba(72, 31, 31,1);
-    padding-bottom: 0px;
-    font-size: 1.5rem;
+    padding-bottom: 20px;
+    font-size: 1.3rem;
     font-weight: 900;
     margin: auto;
+    text-align: center;
 }
 
 .contact-us-section-content-coordonnees-list{
@@ -375,11 +381,15 @@ body.show-mobile-menu .container::before{
     gap: 30px;
     width: min(90%, 600px);
     margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
 }
 
 .contact-us-section-content-coordonnees{
     list-style: none;
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -391,12 +401,13 @@ body.show-mobile-menu .container::before{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: start;
     gap: 15px;
     color: rgb(253, 253, 253);
 }
 
 .contact-us-section-content-coordonnees-number{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 900;
     opacity: 0.95;
     color: rgba(72, 31, 31,1);
@@ -428,15 +439,16 @@ body.show-mobile-menu .container::before{
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
-    padding: 40px 0px;
-    margin-top: 40px;
+    padding: 30px 0px;
+    margin-top: 20px;
     background-color: rgba(216, 203, 213, 0.5);
 }
 
 .contact-us-content-form-title{
     color: rgba(72, 31, 31,1);
     font-weight: 900;
-    padding: 10px;
+    padding: 0px 10px;
+    padding-bottom: 20px;
 }
 
 .contact-us-section-form{
@@ -496,7 +508,7 @@ body.show-mobile-menu .container::before{
 footer{
     background-color: #111827;
     color: white;
-    padding: 50px 50px;
+    padding: 30px 15px;
     width: 100%;
 }
 
@@ -541,16 +553,48 @@ footer{
 }
 
 /*Consentement-section*/
-.container::before{
-    content: '';
-    width: 100%;
-    height: 100%;
+.consentement-cookies{
     position: fixed;
-    top: 0;
-    left: 0;
-    backdrop-filter: blur(5px);
-    z-index: 9;
-    background-color: rgba(0,0,0,0.2);
+    background-color: whitesmoke;
+    width: 90vw;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    z-index: 16;
+}
+
+.consentement-cookies .logo{
+    padding-top: 1.2rem;
+}
+
+.consentement-information{
+    padding: max(5vw, 20px);
+    color: rgb(54, 71, 86);
+    text-align: center;
+    line-height: 1.7rem;
+    font-size: 0.9rem;
+}
+
+#consentement-button{
+    background-color: rgb(116, 24, 201);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 800;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 70%;
+}
+
+#consentement-preference{
+    padding-top: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    padding-bottom: 1.2rem;
+    font-size: 0.8rem;
 }
 
 body.close-consentement .container::before{
@@ -560,18 +604,19 @@ body.close-consentement .container::before{
     position: fixed;
     top: 0;
     left: 0;
-    backdrop-filter: blur(0px);
+    backdrop-filter: blur(5px);
     z-index: 9;
     background-color: rgba(0,0,0,0);
 }
 
 body.close-consentement .consentement-cookies{
-    top: -100%;
+    top: -500%;
 }
 
 
 body.open-consentement .consentement-cookies{
-    top: 15%;
+    bottom: 0;
+    left: 5%;
 }
 
 body.open-consentement .container::before{
@@ -584,46 +629,7 @@ body.open-consentement .container::before{
     backdrop-filter: blur(5px);
     z-index: 9;
     background-color: rgba(0,0,0,0.2);
-}
-
-.consentement-cookies{
-    position: fixed;
-    top: 15vh;
-    background-color: whitesmoke;
-    width: 80vw;
-    height: 70vh;
-    margin-left: 10vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 10px;
-    z-index: 10;
-}
-
-.consentement-cookies .logo{
-    padding-top: 20px;
-}
-
-.consentement-information{
-    padding: 20px;
-    color: rgb(54, 71, 86);
-    text-align: center;
-    line-height: 2rem;
-}
-
-#consentement-button{
-    background-color: rgb(116, 24, 201);
-    color: white;
-    font-size: 1.2rem;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-#consentement-preference{
-    padding-top: 5%;
-    text-decoration: none;
-    cursor: pointer;
+    z-index: 15;
 }
 
 /*footer-section-rgpd*/
@@ -632,7 +638,7 @@ body.open-consentement .container::before{
 }
 
 .separator{
-    width: 90%;
+    width: 100%;
     margin: auto;
     height: 2px;
     background-color: rgb(134, 22, 22);
@@ -641,8 +647,8 @@ body.open-consentement .container::before{
 
 .rgpd-links{
     display: flex;
-    flex-wrap: wrap;
-    width: 70%;
+    flex-direction: column;
+    gap: 15px;
     justify-content: space-around;
 }
 
@@ -666,35 +672,70 @@ body.open-consentement .container::before{
 
 .politique-de-confidentialite{
     position: fixed;
-    top: 15vh;
-    background-color: rgb(53, 45, 45);
-    width: 80vw;
-    height: 70vh;
-    margin-left: 10vw;
+    background-color: rgb(216, 181, 181);
+    width: 90vw;
+    height: auto;
+    margin-left: 5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
     z-index: 10;
-    padding: 5%;
+    padding: min(5vw, 20px);
 }
 
 .politique-de-confidentialite h1{
-    color: aliceblue;
-    padding-top: 2%;
+    color: rgb(44, 46, 48);
+    padding-top: 20px;
+    font-size: 1.5rem;
+    text-align:  center;
 }
 
 .politique-de-confidentialite p{
-    padding-top: 5%;
-    color: aliceblue;
-    line-height: 2rem;
-    text-align: center;
+    padding-top: 20px;
+    color: rgb(44, 46, 48);
+    line-height: 1.8rem;
+    text-align: start;
+    font-size: 0.9rem;
 }
 
+#close-confidentiality-policy-icon{
+    position: absolute;
+    color: rgb(44, 46, 48);
+    right: 10px;
+    top: 5px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+body.close-confidentiality-policy-action 
+.politique-de-confidentialite{
+    top: -500%;
+}
+
+
+body.open-confidentiality-policy-action .politique-de-confidentialite{
+    bottom: 0;
+    z-index: 16;
+}
+
+body.open-confidentiality-policy-action .container::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 15;
+}
 
 /*Tablet design*/
 @media (min-width: 768px){
     header{
+        width: 100%;
         padding: 0px 30px;
         background-color: antiquewhite;
         display: flex;
@@ -731,11 +772,11 @@ body.open-consentement .container::before{
     }
 
     .logo{
-        font-size: 2vw;
+        font-size: 1.2rem;
     }
 
     ul li{
-        font-size: 1.7vw;
+        font-size: 1rem;
         color: rgb(71, 24, 24);
     }
 
@@ -779,7 +820,7 @@ body.open-consentement .container::before{
     }
 
     .about-us-section-image{
-        height: 300px;
+        height: 400px;
     }
 
     /*Service-section*/
@@ -832,6 +873,61 @@ body.open-consentement .container::before{
     .contact-us-section-content-coordonnees-number,
     .contact-us-section-content-social-medias-item-text{
         font-size: 1.3rem;
+    }
+
+    .contact-us-section-content{
+        display: flex;
+        padding: 0px 10px;
+        padding-bottom: 50px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        gap: 40px;
+        width: 100%;
+    }
+
+    .contact-us-section-coordonnees{
+        padding: 20px 0px;
+        width: min(95%, 600px);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        opacity: 0.9;
+        border-radius: 10px;
+        background-color: rgba(182, 175, 181, 0.5);
+        opacity: 0.9;
+    }
+
+    .contact-us-section-content-coordonnees{
+        width: 90%;
+    }
+
+    .contact-us-section-content-coordonnees-number{
+        font-size: 1rem
+    }
+
+    .form{
+        width: min(100%, 700px);
+    }
+
+    /*footer-section*/
+    .footer-section{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .footer-section-presentation{
+        width: 60%;
+    }
+
+    .rgpd-links{
+        display: flex;
+        flex-direction: row;
+        width: 600px;
     }
 }
 
@@ -921,5 +1017,42 @@ body.open-consentement .container::before{
 
     .footer-section-presentation{
         width: 60%;
+    }
+
+    .consentement-cookies .logo{
+        font-size: 2.5rem;
+        padding-top: 50px;
+    }
+
+    .consentement-information{
+        line-height: 2.5rem;;
+        font-size: 1.2rem;
+        padding-top: 20px;
+    }
+
+    #consentement-button{
+        font-size: 1rem;
+    }
+
+    .politique-de-confidentialite h1{
+        padding-top: 50px;
+        font-size: 1.8rem;
+    }
+
+    #close-confidentiality-policy-icon{
+        font-size: 48px;
+        top: 20px;
+        right: 20px;
+    }
+
+    #consentement-preference{
+        padding-top: 30px;
+        font-size: 1rem;
+    }
+
+    .politique-de-confidentialite p{
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+        padding-bottom: 50px;
     }
 }
