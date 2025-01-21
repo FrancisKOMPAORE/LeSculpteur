@@ -126,6 +126,12 @@
 
                         <textarea name="message" id="message" placeholder="MESSAGE" class="form-item message" required></textarea>
 
+                        <div class="checkbox">
+                            <input type="checkbox" name="radio" id="radio"> 
+                            <label for="radio">J’accepte que mes informations soient utilisées pour de la prospection commerciale.</label>
+                            <a href="http://">(Consulter notre politique de confidentialité)</a>
+                        </div>
+
                         <button type="button" class="form-submit">Envoyer</button>
                     </form>
                 </div>
@@ -153,9 +159,33 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="footer-section-rgpd">
+                <div class="separator"></div>
+                <div class="rgpd-links">
+                    <a href="#" class="mention-legale">@2025LeSculpteur</a>
+                    <a href="#" id="politique-de-confidentialite-link">Politique de confidentialité</a>
+                    <a href="#" id="parametre-de-cookies">Paramètre de cookies</a>
+                </div>
+            </div>
         </footer>
     </div>
-    
+
+    <div class="consentement-cookies">
+        <h1 class="logo">LeSculpteur</h1>
+        <p class="consentement-information">Nous utilisons des cookies pour personanaliser le contenu et les publicités, fournir des fonctionnalité de médias sociaux et analyser le trafic. Nous pouvons partager des informations sur votre utilisation de notre site avec nos paetenaires qui peuvent les combiner avec d'autres données que vous avez fournies ou qu'ils ont collectés lors de votre utilisation de leurs services. <br> <br>
+        En cliquant sur le boutton ci dessous, vous acceptez les conditions d'utilisations et notre politique de confidentialité.
+        </p>
+        <button type="button" id="consentement-button">Accepter et autoriser tous les cookies</button>
+        <a href="#" id="consentement-preference">Refuser les cookies</a>
+    </div>
+
+    <div class="politique-de-confidentialite">
+        <h1>Politique de confidentialité</h1>
+        <p>Les données collectées seront communiquées au seul destinataire suivant: le directeur commerciale de la structure. <br>
+        Les données sont conservés pendant 06 mois. <br> Vous pouvez accéder aux données vous concernant, les rectifier, demander leur effacement ou exercer votre droit à la limitation de vos données: <br>Vous pourrez retirer à tout moment votre consentement au traitement de vos données. <br> Vous pourvez également vous opposer au traitement de vos données. <br> Vous pouvez également exercer votre droit à la portabilité de vos données.</p>
+    </div>
+
     <script src="/js/main.js"></script>
 </body>
 </html>
