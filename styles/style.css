@@ -669,7 +669,7 @@ body.open-consentement .container::before{
     top: 15vh;
     background-color: rgb(53, 45, 45);
     width: 80vw;
-    height: auto;
+    height: 70vh;
     margin-left: 10vw;
     display: flex;
     flex-direction: column;
